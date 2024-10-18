@@ -6,7 +6,7 @@ ATU Computer Infrastructure Tasks
 
 This Repository contains my ATU computer infrastructure tasks
 
-## Getting Started
+#### Getting Started
 
 1. Clone this repository..
 
