@@ -16,5 +16,5 @@ jobs:
             - name: Output path
               run: echo "$PATH"
             - name: Test fortune
-              run: fortune 
+              run: usr/games/fortune 
             
