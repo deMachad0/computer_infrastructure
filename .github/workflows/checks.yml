@@ -15,3 +15,5 @@ jobs:
               run: curl --version
             - name: Test fortune
               run: fortune --version
+            - name: Output path
+              run: echo "$PATH"
