@@ -10,6 +10,8 @@ jobs:
     check:
         runs-on: ubuntu-latest
         steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
             - name: Make script executable
               run: chmod +x weather.sh
             - name: Run weather.sh script
