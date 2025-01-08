@@ -20,5 +20,5 @@ jobs:
             - name: Install fortune
               run: sudo apt-get install fortune
             - name: Test fortune
-              run: /usr/games/:/usr/games/fortune
+              run: /usr/games//fortune
             
