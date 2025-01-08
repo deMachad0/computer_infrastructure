@@ -11,5 +11,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Run weather.sh script
-              run: ./weather.sh
+              run: weather.sh
             
