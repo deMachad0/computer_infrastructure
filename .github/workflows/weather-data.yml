@@ -1,0 +1,15 @@
+name: Daily Script Runner
+
+
+on: 
+    schedule: 
+      - cron: "0 10 * * *"
+    workflow_dispatch:
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run weather.sh script
+              run: ./weather.sh
+            
