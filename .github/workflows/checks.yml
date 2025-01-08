@@ -13,7 +13,8 @@ jobs:
               run: wget --version
             - name: Test curl
               run: curl --version
-            - name: Test fortune
-              run: fortune --version
             - name: Output path
               run: echo "$PATH"
+            - name: Test fortune
+              run: fortune --version
+            
