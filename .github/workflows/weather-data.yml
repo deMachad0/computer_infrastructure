@@ -10,6 +10,8 @@ jobs:
     check:
         runs-on: ubuntu-latest
         steps:
+            - name: Make script executable
+              run: chmod +x weather.sh
             - name: Run weather.sh script
-              run: weather.sh
+              run: ./weather.sh
             
