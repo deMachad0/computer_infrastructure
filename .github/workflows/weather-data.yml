@@ -10,10 +10,6 @@ jobs:
     check:
         runs-on: ubuntu-latest
         steps:
-            - name: List workflow directory contents
-              run: ls -l .github/workflows
-            - name: Make script executable
-              run: chmod +x .github/workflows/weather.sh
             - name: Run weather.sh script
               run: .github/workflows/weather.sh
             
