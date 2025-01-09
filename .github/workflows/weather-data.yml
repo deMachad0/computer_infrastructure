@@ -16,4 +16,7 @@ jobs:
               run: chmod +x weather.sh
             - name: Run weather.sh script
               run: ./weather.sh
+            - name: Clone Repository
+              run: |
+                git clone https://github.com/deMachad0/computer_infrastructure.git cloned-repo
             
