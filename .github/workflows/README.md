@@ -37,14 +37,14 @@ Explanation of the script:\
 `schedule` runs the workflow at specific times according to a cron schedule.\
 The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 `cron: "0 10 * * *"`\
-0: Run at the 0th minute of the hour.\
-10: Run at 10AM.\
-*: Every dat of the month.\
-*: Every month.\
-*: Every day of the week.\
+`0`: Run at the 0th minute of the hour.\
+`10`: Run at 10AM.\
+`*`: Every dat of the month.\
+`*`: Every month.\
+`*`: Every day of the week.\
 `workflow_dispatch` allows manual execution of the workflow.
 
-`https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand cron pattern work\
+`https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand cron pattern work
 
 4. Clone the Repository
 
