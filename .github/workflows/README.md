@@ -39,7 +39,7 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 `cron: "0 10 * * *"`\
 `0`: Run at the 0th minute of the hour.\
 `10`: Run at 10AM.\
-`*`: Every dat of the month.\
+`*`: Every day of the month.\
 `*`: Every month.\
 `*`: Every day of the week.\
 `workflow_dispatch` allows manual execution of the workflow.
@@ -56,7 +56,7 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 Using `git` Command allows manually clone a repository.\
 Explanation of the Script:\
 `-name: Clone Repository` it's the name of the step.\
-`run: |` The run keyword set a command to be executed. The | indicates the following lines are a multi-line script.
+`run: |` The run keyword sets a command to be executed. The | indicates the following lines are a multi-line script.
 `git clone https://github.com/deMachad0/computer_infrastructure.git` a Git command to copy a repository from a remote URL.
 
 5. Execute the `weather.sh` script
