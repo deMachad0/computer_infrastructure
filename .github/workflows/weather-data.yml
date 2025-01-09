@@ -18,5 +18,5 @@ jobs:
               run: ./weather.sh
             - name: Clone Repository
               run: |
-                git clone https://github.com/deMachad0/computer_infrastructure.git cloned-repo
+                git clone https://github.com/deMachad0/computer_infrastructure.git
             
