@@ -48,6 +48,20 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 
 `https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand how cron pattern works
 
+```bash
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v3
+```
+Explanation of the script:\
+`jobs`: Includes one or more tasks that need to be completed as part of the workflow.\
+`runs-on`: The latest virtual machine environment for Ubuntu is being used for this job.\
+`steps`: includes a set of actions that must be taken in order to complete the task.\
+`name: Checkout Repository`: checkouts the repository's code using the actions/checkout@v3 action. This stage makes ensuring that the code is usable in the steps that follow.
+
 ---
 4. Clone the Repository
 
