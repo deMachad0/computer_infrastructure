@@ -23,7 +23,8 @@ Explanation of the script:\
 `#!/bin/bash`: Indicates that the script should be executed using the Bash shell.\
 `date`: Prints the current date and time.\
 `echo`: Displays the given message on the terminal.\
-`wget`: Downloads the weather data and saves it to a timestamped file.
+`wget`: Downloads the weather data and saves it to a timestamped file.\
+
 ---
 3. Run Daily at 10am: Using `schedule` event with `cron` to set the script. 
 
