@@ -4,10 +4,10 @@
 
 ### In this project, I will automate my weather.sh script to run daily and push the new data to my repository
 
-## Steps
-
+## Steps:
+---
 1. Create a GitHub Actions Workflow - it's a folder called `.github/workflows/`
-
+---
 2. Inside the folder above (.github/workflows/) create a file called `weather-data.yml`. In this file there will be: 
 
 ```bash
@@ -24,7 +24,7 @@ Explanation of the script:\
 `date`: Prints the current date and time.\
 `echo`: Displays the given message on the terminal.\
 `wget`: Downloads the weather data and saves it to a timestamped file.
-
+---
 3. Run Daily at 10am: Using `schedule` event with `cron` to set the script. 
 
 ```bash
@@ -45,7 +45,7 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 `workflow_dispatch` allows manual execution of the workflow.
 
 `https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand cron pattern work
-
+---
 4. Clone the Repository
 
 ```bash
@@ -58,7 +58,7 @@ Explanation of the Script:\
 `-name: Clone Repository` it's the name of the step.\
 `run: |` The run keyword sets a command to be executed. The | indicates the following lines are a multi-line script.
 `git clone https://github.com/deMachad0/computer_infrastructure.git` a Git command to copy a repository from a remote URL.
-
+---
 5. Execute the `weather.sh` script
 
 ```bash
