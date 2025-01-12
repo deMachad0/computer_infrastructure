@@ -8,7 +8,7 @@
 ---
 1. Create a GitHub Actions Workflow - it's a folder called `.github/workflows/`
 ---
-2. Inside the folder above (.github/workflows/) create a file called `weather-data.yml`. In this file there will be: 
+2. Inside the folder above (.github/workflows/) create a file called `weather-data.yml`. In this file is inserted: 
 
 ```bash
 #!/bin/bash
@@ -24,6 +24,7 @@ Explanation of the script:\
 `date`: Prints the current date and time.\
 `echo`: Displays the given message on the terminal.\
 `wget`: Downloads the weather data and saves it to a timestamped file.
+The data can be found at this URL: `https://prodapi.metweb.ie/observations/athenry/today.`
 
 ---
 3. Run Daily at 10am: Using `schedule` event with `cron` to set the script. 
@@ -45,7 +46,7 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 `*`: Every day of the week.\
 `workflow_dispatch` allows manual execution of the workflow.
 
-`https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand cron pattern work
+`https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand how cron pattern works
 
 ---
 4. Clone the Repository
@@ -61,6 +62,8 @@ Explanation of the Script:\
 `run: |` The run keyword sets a command to be executed. The | indicates the following lines are a multi-line script.
 `git clone https://github.com/deMachad0/computer_infrastructure.git` a Git command to copy a repository from a remote URL.
 
+`https://graphite.dev/guides/how-to-clone-a-git-repository-with-git-clone` Very useful link to learn how to create a bash to clone a repository in few steps
+
 ---
 5. Execute the `weather.sh` script
 
@@ -69,8 +72,11 @@ Explanation of the Script:\
   run: ./weather.sh
 ```
 `name: Run weather.sh script` it's the name of the step.\
-`run: ./weather.sh` executes the script file located in the root of the repository. `./` indicates the script is bein run from the current directory./
+`run: ./weather.sh` executes the script file located in the root of the repository. `./` indicates the script is being run from the current directory./
 To the script be executable, another step must be included using the command:
 ```bash
 run: chmod +x weather.sh
 ```
+`https://www.geeksforgeeks.org/run-bash-script-in-github-actions/` The link provided shows how Bash scripts are required for the running of GitHub Actions processes because they enable a variety of job automation. 
+
+---
