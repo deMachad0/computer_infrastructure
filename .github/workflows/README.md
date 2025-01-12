@@ -23,7 +23,7 @@ Explanation of the script:\
 `#!/bin/bash`: Indicates that the script should be executed using the Bash shell.\
 `date`: Prints the current date and time.\
 `echo`: Displays the given message on the terminal.\
-`wget`: Downloads the weather data and saves it to a timestamped file.\
+`wget`: Downloads the weather data and saves it to a timestamped file.
 
 ---
 3. Run Daily at 10am: Using `schedule` event with `cron` to set the script. 
@@ -46,6 +46,7 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 `workflow_dispatch` allows manual execution of the workflow.
 
 `https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand cron pattern work
+
 ---
 4. Clone the Repository
 
@@ -59,6 +60,7 @@ Explanation of the Script:\
 `-name: Clone Repository` it's the name of the step.\
 `run: |` The run keyword sets a command to be executed. The | indicates the following lines are a multi-line script.
 `git clone https://github.com/deMachad0/computer_infrastructure.git` a Git command to copy a repository from a remote URL.
+
 ---
 5. Execute the `weather.sh` script
 
