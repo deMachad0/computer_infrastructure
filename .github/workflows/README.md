@@ -48,6 +48,9 @@ The `cron` syntax specifies when the workflow should run. In this case at 10am.\
 
 `https://dev.to/thatanjan/learn-cron-jobs-in-10-minutes-1p77?utm_source=chatgpt.com` This link is very helpful to understand how cron pattern works
 
+---
+4. Use a Linux Virtual Machine In the workflow file, specify that a Ubuntu virtual machine should be used to run the action
+
 ```bash
 jobs:
     check:
@@ -63,7 +66,7 @@ Explanation of the script:\
 `name: Checkout Repository`: checkouts the repository's code using the actions/checkout@v3 action. This stage makes ensuring that the code is usable in the steps that follow.
 
 ---
-4. Clone the Repository
+5. Clone the Repository
 
 ```bash
 - name: Clone Repository
@@ -79,7 +82,7 @@ Explanation of the Script:\
 `https://graphite.dev/guides/how-to-clone-a-git-repository-with-git-clone` Very useful link to learn how to create a bash to clone a repository in few steps
 
 ---
-5. Execute the `weather.sh` script
+6. Execute the `weather.sh` script
 
 ```bash
 - name: Run weather.sh script
